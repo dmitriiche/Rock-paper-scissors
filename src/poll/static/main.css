@@ -1,0 +1,77 @@
+.field{
+    margin-top: 30px;
+    position: absolute;
+    left: 25%;
+}
+
+.input-field{
+    display: block;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+}
+
+.actions-field{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    margin: 10px;
+}
+
+.round-field{
+    top: 350px;
+    display: block;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+}
+
+.user-input{
+    left: 0;
+}
+
+.server-input{
+    right: 0;
+}
+
+.action{
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter: grayscale(50%);
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: absolute;
+
+}
+
+.user-input .action:hover,
+.user-input .action:active{
+    filter: none;
+    cursor: pointer;
+    shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-size: 120px;
+    background-position: center;
+}
+
+.scissors{
+    background-image: url("images/scissors.png");
+}
+
+.paper{
+    background-image: url("images/paper.png");
+    right: 0;
+}
+.rock{
+    background-image: url("images/rock.png");
+    bottom: 0;
+    left: calc(50% - 60px);
+}
+
+.round-action{
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+}
