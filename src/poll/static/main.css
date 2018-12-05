@@ -1,6 +1,6 @@
 .field{
-    margin-top: 30px;
     position: absolute;
+    top: 30px;
     left: 25%;
 }
 
@@ -35,6 +35,10 @@
     right: 0;
 }
 
+h1{
+    text-align: center;
+}
+
 .action{
     background-repeat: no-repeat;
     background-size: 100px;
@@ -57,21 +61,62 @@
 }
 
 .scissors{
-    background-image: url("images/scissors.png");
+    background-image: url("images/scissors.png"); /*Image provided by Enzoklop [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], from Wikimedia Commons*/
 }
 
 .paper{
-    background-image: url("images/paper.png");
+    background-image: url("images/paper.png"); /*Image provided by Enzoklop [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], from Wikimedia Commons*/
     right: 0;
 }
 .rock{
-    background-image: url("images/rock.png");
+    background-image: url("images/rock.png"); /*Image provided by Enzoklop [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], from Wikimedia Commons*/
     bottom: 0;
     left: calc(50% - 60px);
+}
+
+.user-round, .server-round{
+    display: inline-block;
+}
+
+.server-round {
+    right: 0;
+    position: absolute;
 }
 
 .round-action{
     background-size: 300px;
     width: 300px;
     height: 300px;
+}
+
+
+#notification-box {
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    min-width: 500px;
+    z-index: 2;
+    left: 5em;
+}
+#notification-box:hover {
+    display: block;
+}
+.notification-enter-active, .notification-leave-active {
+    transition: opacity 1s, top 1s;
+}
+.notification-enter /* .fade-leave-active below version 2.1.8 */ {
+    top:-40px;
+    opacity: 0;
+}
+.notification-enter-to /* .fade-leave-active below version 2.1.8 */ {
+    top: 0;
+    opacity: 0.95;
+}
+.notification-leave {
+    top: 0;
+    /*opacity: 0.95;*/
+}
+.notification-leave-to {
+    top: -40px;
+    opacity: 0.5;
 }
