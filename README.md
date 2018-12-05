@@ -1,7 +1,7 @@
 # Rock paper scissors
 This is the test django/VueJs project.
 
-##Installation
+## Installation
 
 - Download and install [python](https://www.python.org/downloads/)  
 - (Optional) Create [virtual environment](https://docs.python.org/3/tutorial/venv.html) 
